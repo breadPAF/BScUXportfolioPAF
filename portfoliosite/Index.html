@@ -1,0 +1,105 @@
+<html>
+  <html lang="en">
+    <head>
+      <meta charset="utf-8">
+      <title>Pedro AF Portfolio</title>
+      <link rel="stylesheet" href="webstyle.css"> 
+    </head>
+  <body>
+    <div style="width: 30%; margin-left: 30%; padding: 5%; background-color: white;">
+      <img style="clip-path: circle(); margin-left: 12%;" src="assets/me.png" title="me"</img> 
+      
+      <h1 style="text-align: center;">Me</h1>
+      <p>My name is Pedro Ferreira and am a student at my local college, I seek to learn as many things as I possibly can, aiming to be a generalist so that when the need for specialisation comes, I can easily rise to the occasion.</p>
+      <p>I believe that an important factor in learning is to have fun and experiment at first, so that when the time comes to not only expand your knowledge, but apply it to a real-world scenario, you are prepared to do it with confidence. Matthew 7:24 is an apt analogy for this opinion, one must establish a solid foundation of learning before continuing on forwards with experience.</p>
+      <br>
+      <h1 style="text-align: center;">The Steam UX project</h1>
+      <p>I have been a gamer since I was young, and not on consoles, but my parent's Pentium laptop. As those who game on PC may know, a majority of games are bought and launched from the Steam platform, created by Valve in 2003 as a simple updater for their games (notably in preparation for Half-Life 2, objectively the best game ever made) until Valve made the risky decision to go digital and act as a storefront for PC games, needless to say, nobody buys PC games on discs anymore and for good reason.</p>
+      <p>Steam has been a consistent good performer, especially when it comes to PR as Steam users (so all PC gamers) hold a cult-like love and respect for not only the software but Valve as a company since they released some of the best games ever made. They did this by holding true to their vision and knowing what their users (gamers) want. So whats wrong with their application? Well, Steam has gone through multiple design changes, most notably around 2020 as the Library was changed to the shelf interface (which angered many), but if you look closer, you'll start to notice alot of issues with Steam's interface.</p>
+      <p>These issues were identified in the project and solutions proposed in the form of a hypothetical redesign of the Steam application, targetting only the Store page and Library page however, as the most cruical and flawed parts of Steam. This journey is documented below.</p>
+      <p>Right click and "Open image in new tab" to see images in their true form if they look odd.</p>
+      <br>
+      
+      <h1 style="text-align: center;">UX Design Methodology</h1>
+      <p>Before starting any UX project, it is important to establish the methodology that will be used as it will affect the entire prototyping and design process. A project with no methodology will make inefficient use of user feedback and iterative development.</p>
+      <img style="margin-left: 12%;" src="assets/figure1.png" title="uxmeth"</img> 
+      <p>This methodology puts emphasis on establishing strong principles and design paradigms before moving onto iteration, an example of principles could include <a href="https://www.nngroup.com/articles/ten-usability-heuristics/">Jakob Nielsen's Usability Heuristics</a> or Gestalt Theory, essentially works that remind one of what the cornerstones of UX design are so that they can be observed and applied throughout the project.</p>
+      <img src="assets/low1.png" title="lowfidelity1"</img> 
+      <p>It then moves onto the iteration phase, here the application in question begins with low-detail, low-investment prototypes meant to rapidly experiment with possible designs. You can just sketch multiple rough ideas of what the design would look like and then conduct a review either with users or your team to either pick out a design or pick and match benefical features from the rough designs created, potentially going from sketches to wireframes. If you have some extra time, you could go even more in-depth and try to figure out why a certain design or feature was preferred, eitherway, since low-fidelity designs cost so little in man-hours to do, you should not neglect this stage in development.</p>
+      <p>I tool I used to produce wireframes and medium fidelity prototypes was Draw.io, its very janky if you are not experienced with it but overtime I've come to appreciate it as an easy-to-access tool in my browser for projects or even just quickly creating icons.  Make sure to disable connection points and guides when you don't need them in the diagram options!</p>
+      <img src="assets/med1.png" title="medfideility1"</img> 
+      <p>When you finally settle on a design archtype, you go through the process of increasing fidelity as you review and recieve feedback, first you'll add colour to the design and maybe some text, then review, this will be your first medium-fidelity iteration. Then you add more complexity to the design until you have a pretty good idea of how the application is supposed to look like and have an established design language, this is when you move from medium-fidelity and high-fidelity by adding functionality.</p>
+      <p>In the past, there was no high-fidelity prototype other than actually making the application in code, of course, this is totally fine for programmers! Totally not for UX designers though! Luckily at the time of writing this its 2024 (near 2025!) so there are tools out there that allow one to emulate functionality without needing to learn an entire programming language, this makes it much easier and thus faster to run through iterations, not to mention more accessible.</p>
+      <p>The tool I used was Figma, its web-based and is free with subscription options, but the free version provides enough of a toolset to make a good high-fidelity prototype, the most important tool being components which allows you to reuse different functionalities within the same workspace and beyond, you'd understand if you've used the software before. Apropos, the methodology remains the same, create a prototype and have it reviewed then repeat until you believe that the design meets all user/client/stakeholder expectations.</p>
+      <p>Then finally, you build, though that is out of scope for this particular project. You'd link up with developers and programmers and actually create the application in question.</p>
+      
+      <h1 style="text-align: center;">Establish User Requirements</h1>
+      <p>With the UX methodology in place, we must establish more specific principles and insights for the application's purpose, the best way to do this is to just ask the end user, since this is a game vendor platform, the end user would be PC gamers. Luckily, Steam also has community functionality which made collecting user opinions relatively easy, I wrote a Google Forms survey and just posted it in Steam Discussions, usually, a digital survey has issues with bias and poor control but these were non-issues because Steam users are technical enough to access the survey AND Google Forms provides features to prevent abuse or duplication of the survey.</p>
+      <p>Yes, its in Portuguese, sorry, its my Google account language.</p>
+      <img src="assets/survey1.png" title="survey1"</img> 
+      <p>I asked some questions about a user's preferences within the site, though the most insightful responses came from questions that asked for either positive or negative feedback from the Store and Library, whilst many of the 44 responses were not too helpful, some were kind enough to go very in-depth in explaining their thoughts which helped shape the design in a positive direction. It also meant that I didn't have to dirty my hands with personal information, all it requires from a respondent is a Google account (which most PC users would have) and that information can be set to be anonymous to the survey owner (me).</p>
+
+      <h1 style="text-align: center;">The Issues in Question</h1>
+      <p>Ignoring the accessibility issues (which honestly deserve their own segment), here are some annotations that highlight some of the problems encountered.</p>
+      <img style="width: 519px; height: 274px;" src="assets/annotations/an1.png" title="an1"</img> 
+      <img src="assets/annotations/an2.png" title="an1"</img> 
+      <img style="width: 519px; height: 274px;" src="assets/annotations/an3.png" title="an1"</img> 
+      <img style="width: 519px; height: 274px;" src="assets/annotations/an4.png" title="an1"</img> 
+      <img style="width: 519px; height: 274px;" src="assets/annotations/an5.png" title="an1"</img> 
+      <img style="width: 519px; height: 274px;" src="assets/annotations/an6.png" title="an1"</img> 
+
+      <h1 style="text-align: center;">Low-Fidelity Prototype</h1>
+      <p>Here are the wireframes for the prototype, there are multiple designs, notably the Library with one having the shelf system and another removing it for store announcements.</p>
+      <p style="text-align: center;">Store Design 1</p>
+      <img style="width: 519px; height: 274px;" src="assets/low/lowstore1.png" title="s1"</img> 
+      <p style="text-align: center;">Store Design 2</p>
+      <img style="width: 519px; height: 274px;" src="assets/low/lowstore2.png" title="s1"</img> 
+      <p>In the user feedback, most agreed that 1 was the better design, with the prevailing opinion being that its more organised, my thought process for splitting up the filter bar onto both sides was to have the less used options (Connectivity and Hardware) on the right to make more space for the more important filters on the left. Users also preferred having more information at a glance, so quality over quantity when it comes to game recommendations.</p>
+      <p style="text-align: center;">Library Design 1</p>
+      <img style="width: 519px; height: 274px;" src="assets/low/lowlib1.png" title="s1"</img> 
+      <p style="text-align: center;">Library Design 2</p>
+      <img style="width: 519px; height: 274px;" src="assets/low/lowlib2.png" title="s1"</img> 
+      <p>In the user feedback, most preferred the first design, seeing it as more cleaner and easy on the eyes, this may be a skill issue on my part, of course the design with a simple left-to-right design would be preferred, still, in my user survey I found that many never used the grid and shelf system of the Steam library so I produced a design that removed it in return for alot of extra space, extra space that I used to put a wishlist sale noticer which I and the other users I asked like. I also put in Steam news and announcements to further use up the space (I had alot of extra space by removing customisability!) but a user vehemently disagreed with having "advertisements" in their Library, needless to say, you don't want to deal with an angry gamer so I removed that in the medium fidelity design.</p>
+      <p style="text-align: center;">Library Design Game Page</p>
+      <img style="width: 519px; height: 274px;" src="assets/low/lowlibgame.png" title="s1"</img> 
+      <p>Not much to say here, the design is similar to Steams current interface, the only notable changes is the Activity split into "News and Updates" and "Friend Activity" which was met well by the users that reviewed it. Of course, it would be scrollable but it wouldn't have Steam's current design with frankly useless features like "Notes" and a workshop element even though the workshop is accessible from the very top.</p>
+
+      <h1 style="text-align: center;">Medium-Fidelity Prototype</h1>
+      <p>Here are the medium fidelity prototypes for this project.</p>
+      <p style="text-align: center;">Store Design</p>
+      <img style="width: 519px;" src="assets/med/medstore.png" title="s1"</img> 
+      <p>Note the slight showcase of functionality on the filters, it is supposed to show that the filters would work as a dropdown. There are also placeholders used here to save up on time. The addition of text and images to help showcase the design.</p>
+      <p style="text-align: center;">Library Home Design</p>
+      <img style="width: 519px;" src="assets/med/medlibhome.png" title="s1"</img> 
+      <p style="text-align: center;">Library Game Design</p>
+      <img style="width: 519px;" src="assets/med/medlibgame.png" title="s1"</img> 
+      <p>Placeholders are used instead of images, once again, I didn't have the time to draw cool game banners or icons, though it is fun. You also may have noticed that the game list on the left looks different and the colours are switched, that was me experimenting again and users preferred the one split up, stating that it was easier to comprehend. But I also saw that the darker colour helps more in regards to contrast and white text which makes it easier to read so I ended up with keeping the left a blueish colour too as the right side will have smaller text (plus the games will have icons to help visibility).</p>
+
+      <h1 style="text-align: center;">High-Fidelity Prototype</h1>
+      <p>Here are the high fidelity prototypes for this project.</p>
+      <p style="text-align: center;">Store Design</p>
+      <img style="width: 519px;" src="assets/high/highstore1.png" title="s1"</img> 
+      <p style="text-align: center;">Store Design Components</p>
+      <img style="width: 519px;" src="assets/high/highstorecom1.png" title="s1"</img> 
+      <img style="width: 519px; height: 660px;" src="assets/high/highstorecom2.png" title="s1"</img> 
+      <img style="width: 519px;" src="assets/high/highstorecom3.png" title="s1"</img> 
+      <p style="text-align: center;">Library Home Design</p>
+      <img style="width: 519px;" src="assets/high/highlibhome1.png" title="s1"</img> 
+      <p style="text-align: center;">Library Home Design Components</p>
+      <img style="width: 519px;" src="assets/high/highlibstorecom1.png" title="s1"</img> 
+      <p style="text-align: center;">Library Game Design</p>
+      <img style="width: 519px;" src="assets/high/highgame1.png" title="s1"</img> 
+      <p style="text-align: center;">Library Home Design Components</p>
+      <img style="width: 519px;" src="assets/high/highgamecom1.png" title="s1"</img> 
+
+      <h1 style="text-align: center;">Cognitive Walkthrough</h1>
+      <p>The final review for the high fidelity prototype was a cognitive walkthrough where you write a number of tasks depending on your application's purpose and have users carry them out under your observation, whilst taking notes of course.</p>
+      <p>The tasks were as follows: Find the “Platformer” genre. Find information about “Mouse Tower Defense 2”. Apply a filter on the Library Game List. Add a game to favourites. Uninstall a game.</p>
+
+      <h1 style="text-align: center;">Conclusion</h1>
+      <p>The final prototype was most certainly not a perfect version of the Steam application, I was learning to use Figma during this project so I was unable to make something pretty with it but I did manage to showcase some features and functionalities that would be great for the Steam application, personally am hoping for a wishlist sale shelf in the library home page, that would be very useful for me since I have 74 games in my wishlist at the moment!</p>
+
+
+    </div>
+  </body>
+</html>
